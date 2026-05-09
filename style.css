@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap');
+
+:root {
+    /* Theme variables (generic — override per-surah) */
+    --theme-deep: #1B2845;
+    --theme-primary: #3A6BC5;
+    --theme-primary-light: #6B9FE8;
+    --theme-accent: #FFD666;
+    --theme-accent-dark: #E8B830;
+    --theme-accent-glow: rgba(255,214,102,0.3);
+    --theme-green: #3DAA6D;
+    --theme-green-light: #B8E6CC;
+    --theme-purple: #7B68AE;
+    --theme-purple-light: #C4B8E0;
+    --theme-rose: #E88BA5;
+    --theme-orange: #F4A261;
+    --theme-cream: #FFF9F0;
+    --theme-cream-warm: #FFF3E0;
+    --theme-sand: #F0E4D0;
+    --theme-text: #2C1810;
+    --theme-text-light: #8A7B6A;
+
+    /* Legacy aliases (for backward compat) */
+    --naba-deep: var(--theme-deep);
+    --naba-sky: var(--theme-primary);
+    --naba-sky-light: var(--theme-primary-light);
+    --naba-gold: var(--theme-accent);
+    --naba-gold-dark: var(--theme-accent-dark);
+    --naba-gold-glow: var(--theme-accent-glow);
+    --naba-green: var(--theme-green);
+    --naba-green-light: var(--theme-green-light);
+    --naba-purple: var(--theme-purple);
+    --naba-purple-light: var(--theme-purple-light);
+    --naba-rose: var(--theme-rose);
+    --naba-orange: var(--theme-orange);
+    --naba-cream: var(--theme-cream);
+    --naba-cream-warm: var(--theme-cream-warm);
+    --naba-sand: var(--theme-sand);
+    --naba-text: var(--theme-text);
+    --naba-text-light: var(--theme-text-light);
+
+    /* Border radius scale */
+    --r-sm: 8px;
+    --r-md: 14px;
+    --r-lg: 24px;
+    --r-pill: 50px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Nunito', 'Quicksand', 'Trebuchet MS', sans-serif;
+    background: #1a1a2e;
+    color: var(--naba-text);
+    min-height: 100vh;
+}
+
+/* ===== CONTROLS ===== */
+.no-print {
+    background: linear-gradient(135deg, #1B2845 0%, #2D4A7A 50%, #3A6BC5 100%);
+    padding: 24px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+}
+.no-print h1 {
+    font-family: 'Baloo 2', cursive;
+    color: var(--naba-gold);
+    margin-bottom: 6px;
+    font-weight: 800;
+    font-size: 1.8rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.no-print p { color: rgba(255,255,255,0.8); margin-bottom: 14px; font-size: 0.9rem; }
+
+.btn-primary, .btn-secondary {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 6px;
+    transition: all 0.3s ease;
+}
+.btn-primary {
+    background: linear-gradient(135deg, var(--naba-gold) 0%, var(--naba-gold-dark) 100%);
+    color: var(--naba-deep);
+    box-shadow: 0 4px 20px rgba(255,214,102,0.4);
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(255,214,102,0.5); }
+.btn-secondary {
+    background: rgba(255,255,255,0.12);
+    color: white;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+.btn-secondary:disabled { opacity: 0.4; cursor: not-allowed; }
+.status-msg { margin-top: 12px; color: var(--naba-gold); font-weight: bold; font-size: 0.85rem; }
+
+/* ===== BOOK ===== */
+.book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 28px 0;
+}
+
+/* ===== PAGE (with 3mm bleed for offset printing) ===== */
+.page {
+    width: 216mm;  /* 210mm + 3mm bleed each side */
+    height: 303mm; /* 297mm + 3mm bleed each side */
+    padding: 3mm;  /* bleed area */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* Solid warm parchment background (print safe, high contrast for text) */
+    background-color: #fcf9f2;
+    box-shadow: 
+        inset 0 0 120px rgba(139, 69, 19, 0.04),
+        0 12px 60px rgba(0,0,0,0.5);
+}
+
+.page-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10mm 12mm;
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== FULL-BLEED (Cover & Surah Title) ===== */
+.fullbleed-page { padding: 0; }
+.fullbleed-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+}
+.fullbleed-bg img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.fullbleed-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1;
+}
+.cover-page .fullbleed-overlay {
+    background: linear-gradient(to bottom,
+        rgba(27,40,69,0.1) 0%, rgba(27,40,69,0) 25%,
+        rgba(27,40,69,0.3) 55%, rgba(27,40,69,0.92) 85%,
+        rgba(27,40,69,0.98) 100%);
+}
+.surah-title-page .fullbleed-overlay {
+    background: linear-gradient(to bottom,
+        rgba(27,40,69,0.05) 0%, rgba(27,40,69,0) 20%,
+        rgba(27,40,69,0.35) 50%, rgba(27,40,69,0.88) 80%,
+        rgba(27,40,69,0.96) 100%);
+}
+.fullbleed-content {
+    position: relative; z-index: 2;
+    display: flex; flex-direction: column;
+    justify-content: flex-end;
+    height: 100%; padding: 16mm 18mm;
+    text-align: center; color: white;
+}
+
+/* Cover */
+.cover-title {
+    font-family: 'Baloo 2', cursive;
+    font-size: 5rem; font-weight: 800;
+    color: var(--naba-gold); line-height: 1.0;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.6), 0 0 60px var(--naba-gold-glow);
+    margin-bottom: 8px;
+    animation: popIn 1s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+}
+.cover-subtitle {
+    font-size: 1.25rem; font-weight: 700;
+    color: rgba(255,255,255,0.95);
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+    animation: popIn 1s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s backwards;
+}
+.cover-footer { 
+    font-size: 0.8rem; color: rgba(255,255,255,0.45); letter-spacing: 1px; 
+    animation: popIn 1s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s backwards;
+}
+
+/* Surah Title */
+.surah-title-badge {
+    display: inline-block;
+    background: rgba(255,214,102,0.15);
+    border: 2px solid var(--naba-gold);
+    color: var(--naba-gold);
+    padding: 5px 24px; border-radius: 50px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 0.8rem; font-weight: 700;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 12px; backdrop-filter: blur(8px);
+}
+.surah-title-arabic {
+    font-family: 'Amiri', serif;
+    font-size: 5.5rem; color: white; line-height: 1.3;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    margin-bottom: 4px;
+}
+.surah-title-latin {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2.5rem; font-weight: 800;
+    color: var(--naba-gold);
+    text-shadow: 0 3px 12px rgba(0,0,0,0.5), 0 0 40px var(--naba-gold-glow);
+    margin-bottom: 6px;
+}
+.surah-title-meaning {
+    font-size: 1.1rem; color: rgba(255,255,255,0.85);
+    font-style: italic; margin-bottom: 16px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+.surah-meta-row { display: flex; justify-content: center; gap: 12px; }
+.surah-meta-chip {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    border: 1.5px solid rgba(255,255,255,0.25);
+    color: white; padding: 6px 18px;
+    border-radius: 50px; font-size: 0.8rem; font-weight: 700;
+}
+
+/* Character on title page */
+.character-float {
+    position: absolute;
+    bottom: 25%; right: 14mm;
+    width: 110px; z-index: 3;
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.5));
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* ===== CONTENT PAGE DECORATIONS ===== */
+
+/* Background Layer: Thematic Watercolor + Frame */
+.page-layer-watercolor {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.85; /* Soften slightly so text pops */
+}
+.page-layer-watercolor img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Mascot Peek-a-boo Layer */
+.mascot-peek {
+    position: absolute;
+    z-index: 4;
+    pointer-events: none;
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.25));
+}
+.mascot-peek-bottom-left {
+    bottom: -5mm; left: -2mm;
+    width: 120px;
+}
+.mascot-peek-bottom-right {
+    bottom: 5mm; right: 5mm;
+    width: 110px;
+}
+.mascot-peek-top-right {
+    top: -5mm; right: 10mm;
+    width: 100px;
+}
+
+/* Ornate Islamic frame — now baked into the page background */
+.page-border-decor {
+    display: none;
+}
+
+/* Arabesque corner ornaments — disabled (white remnants from rembg) */
+.corner-ornament {
+    display: none;
+}
+
+/* Gold Dust pattern — tiny dots that look like hidden sparkles */
+.page::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    opacity: 0.12;
+    background-image: radial-gradient(#d4af37 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Connecting frame — disabled */
+.page::after {
+    display: none;
+}
+
+/* ===== STORYTELLING WRAP-AROUND LAYOUT ===== */
+.story-group {
+    display: block; /* Change from flex to block for text wrapping */
+    margin-bottom: 24px;
+    width: 100%;
+}
+/* Clearfix */
+.story-group::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.story-illustration {
+    max-width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 10;
+}
+.story-group.align-left .story-illustration {
+    float: left;
+    margin-right: 20px;
+}
+.story-group.align-right .story-illustration {
+    float: right;
+    margin-left: 20px;
+}
+
+.story-illustration img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+    filter: drop-shadow(2px 6px 0 rgba(180,160,120,0.4)) drop-shadow(0 12px 20px rgba(0,0,0,0.15));
+    /* Blend the bottom edge smoothly to hide flat cut-offs from AI generation */
+    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+}
+/* True ribbon-shaped caption */
+.story-caption {
+    margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.72rem;
+    color: #4a3728;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.3;
+    padding: 8px 28px;
+    background: linear-gradient(to bottom, #FFD666, #E8B830);
+    clip-path: polygon(8% 0%, 92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%);
+    position: relative;
+    z-index: 2;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.15);
+}
+
+.story-verses {
+    display: block;
+}
+
+@keyframes floatSlow {
+    from { transform: translateY(0); }
+    to { transform: translateY(-12px); }
+}
+@keyframes floatFast {
+    from { transform: translateY(0); }
+    to { transform: translateY(-8px); }
+}
+@keyframes pulseGlow {
+    from { filter: drop-shadow(0 0 10px rgba(255,214,102,0.4)); }
+    to { filter: drop-shadow(0 0 25px rgba(255,214,102,0.8)); }
+}
+
+/* Space Filler (for empty areas on last page) */
+.space-filler {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10px;
+    opacity: 0.95;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.25));
+    flex: 1;
+    min-height: 0; /* allow shrinking so it doesn't cause overflow */
+    animation: popIn 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.5s backwards;
+}
+.space-filler img {
+    height: 100%; /* scale to fit available flex height */
+    max-height: 250px; /* maximum size */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Sparkle stars - hidden, replaced by arabesque ornaments */
+.sparkle-star {
+    display: none;
+}
+
+/* Top decorative header bar on content pages */
+.page-header-decor {
+    position: absolute;
+    top: 7mm; left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.page-header-decor::before,
+.page-header-decor::after {
+    content: '';
+    width: 40px; height: 1.5px;
+    background: linear-gradient(90deg, transparent, var(--naba-gold), transparent);
+}
+.page-header-decor .header-star {
+    color: var(--naba-gold);
+    font-size: 0.55rem;
+    opacity: 0.4;
+}
+
+/* ===== BISMILLAH ===== */
+.bismillah-section {
+    text-align: center;
+    padding: 14px 0;
+    margin-bottom: 12px;
+    position: relative;
+}
+.bismillah-line {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: center;
+    margin-bottom: 3px;
+    position: relative;
+    z-index: 1;
+}
+.bismillah-star { color: var(--naba-gold); font-size: 0.7rem; }
+.bismillah-arabic {
+    font-family: 'Amiri', serif;
+    font-size: 2.4rem;
+    color: var(--naba-deep);
+}
+.bismillah-latin {
+    display: block;
+    font-size: 0.65rem;
+    color: var(--naba-text-light);
+    font-style: italic;
+    margin-top: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== AYAT BLOCK (Ink on Parchment) ===== */
+.ayat-block {
+    position: relative;
+    padding: 10px 12px 10px 46px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+@keyframes popIn {
+    0% { opacity: 0; transform: translateY(8px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.verse-num {
+    position: absolute;
+    left: 4px; top: 8px;
+    width: 34px; height: 34px;
+    display: flex; justify-content: center; align-items: center;
+    font-family: 'Baloo 2', cursive;
+    font-size: 0.75rem; font-weight: 800;
+    color: var(--naba-deep);
+    z-index: 3;
+    background-image: url('assets/an_naba/medallion_ayat.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.ayat-arabic {
+    font-family: 'Amiri', serif;
+    font-size: 2.1rem;
+    color: var(--naba-deep);
+    line-height: 2.2;
+    text-align: right;
+    direction: rtl;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    margin-bottom: 6px;
+    position: relative;
+    z-index: 2;
+}
+
+.ayat-latin {
+    font-size: 0.85rem;
+    color: var(--naba-text-light);
+    font-style: italic;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    margin-bottom: 6px;
+    position: relative;
+    z-index: 2;
+}
+
+.ayat-translation {
+    font-size: 0.85rem;
+    color: var(--naba-text);
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+}
+
+.ayat-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 0;
+    height: 30px;
+}
+.ayat-separator img {
+    height: 100%;
+    width: auto;
+    opacity: 0.5;
+}
+.sep-line {
+    flex: 1;
+    max-width: 60px;
+    height: 1.5px;
+    background: linear-gradient(90deg, transparent, var(--naba-gold), transparent);
+}
+.sep-star {
+    color: var(--naba-gold);
+    font-size: 0.8rem;
+    text-shadow: 0 0 10px rgba(255,214,102,0.6);
+}
+
+/* ===== CONTINUATION ===== */
+.continuation-header {
+    text-align: center;
+    margin-bottom: 8px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--naba-sky);
+    padding: 5px 0;
+    border-bottom: 1px solid var(--naba-sand);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.continuation-header::before,
+.continuation-header::after {
+    content: '';
+    flex: 1; max-width: 50px;
+    height: 1px;
+    background: var(--naba-sand);
+}
+
+/* ===== INFO CARDS ===== */
+.info-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255,255,255,0.8);
+    border-radius: var(--r-md);
+    padding: 16px 18px;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.info-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 6px;
+}
+.info-card.tafsir::before { background: linear-gradient(to bottom, var(--naba-green), var(--naba-green-light)); }
+.info-card.asbabun::before { background: linear-gradient(to bottom, var(--naba-sky), var(--naba-sky-light)); }
+.info-card.tajwid-card::before { background: linear-gradient(to bottom, var(--naba-purple), var(--naba-purple-light)); }
+
+.info-card-icon {
+    font-size: 1.8rem;
+    position: absolute;
+    right: 12px; top: 8px;
+    opacity: 0.1;
+}
+
+.info-card-title {
+    font-family: 'Baloo 2', 'Quicksand', 'Trebuchet MS', sans-serif;
+    font-size: 1.05rem; font-weight: 800;
+    margin-bottom: 5px; padding-left: 10px;
+}
+.info-card.tafsir .info-card-title { color: var(--naba-green); }
+.info-card.asbabun .info-card-title { color: var(--naba-sky); }
+.info-card.tajwid-card .info-card-title { color: var(--naba-purple); }
+
+.tafsir-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px; padding-left: 10px;
+}
+.tafsir-col h4 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 0.72rem; color: var(--naba-deep);
+    margin-bottom: 3px;
+}
+.tafsir-col p, .info-card-body {
+    font-size: 0.72rem; line-height: 1.5;
+    color: var(--naba-text); padding-left: 10px;
+}
+
+/* ===== TAJWID ===== */
+.tajwid-list { display: flex; flex-direction: column; gap: 4px; padding-left: 10px; }
+.tajwid-item {
+    display: flex; align-items: center; gap: 8px;
+    padding: 4px 8px;
+    background: rgba(123,104,174,0.05);
+    border-radius: 8px;
+}
+.tajwid-left { flex: 1; min-width: 0; }
+.tajwid-name {
+    font-family: 'Baloo 2', 'Quicksand', 'Trebuchet MS', sans-serif;
+    font-weight: 700; font-size: 0.75rem;
+    color: var(--naba-deep); display: block;
+}
+.tajwid-desc { color: var(--naba-text-light); font-size: 0.7rem; line-height: 1.5; }
+.tajwid-right { text-align: center; flex-shrink: 0; min-width: 55px; }
+.tajwid-example {
+    font-family: 'Amiri', serif;
+    font-size: 1.15rem; color: var(--naba-deep);
+    font-weight: bold; display: block; line-height: 1.4;
+}
+.tajwid-example-latin { font-size: 0.65rem; color: var(--naba-text-light); font-style: italic; }
+
+/* ===== CLOSING SCENE (fills empty space on last content page) ===== */
+.closing-scene {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 8px;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    min-height: 80px;
+}
+.closing-scene > img:first-child {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    opacity: 0.9;
+}
+.closing-scene .closing-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 14px;
+    background: linear-gradient(to top, rgba(27,40,69,0.88), rgba(27,40,69,0.2) 60%, transparent);
+    text-align: center;
+    border-radius: 0 0 14px 14px;
+}
+.closing-text {
+    font-family: 'Baloo 2', cursive;
+    font-size: 0.88rem; font-weight: 700;
+    color: var(--naba-gold);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+.closing-subtext {
+    font-size: 0.62rem;
+    color: rgba(255,255,255,0.7);
+    margin-top: 2px;
+}
+.closing-character {
+    position: absolute;
+    bottom: 10px; right: 14px;
+    width: 70px;
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.3));
+    z-index: 2;
+}
+
+/* ===== FULL BLEED CLOSING PAGE ===== */
+.closing-fullbleed { padding: 0; }
+.closing-fullbleed .fullbleed-overlay {
+    background: linear-gradient(to bottom,
+        transparent 0%, transparent 30%,
+        rgba(27,40,69,0.4) 60%, rgba(27,40,69,0.9) 100%);
+}
+.closing-fullbleed .fullbleed-content {
+    justify-content: flex-end;
+    padding: 20mm;
+}
+.closing-fullbleed .closing-msg {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.6rem; font-weight: 800;
+    color: var(--naba-gold);
+    text-shadow: 0 3px 12px rgba(0,0,0,0.5);
+    margin-bottom: 8px;
+}
+.closing-fullbleed .closing-verse {
+    font-family: 'Amiri', serif;
+    font-size: 1.8rem; color: white;
+    line-height: 1.6; margin-bottom: 6px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.closing-fullbleed .closing-verse-tr {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    font-style: italic;
+}
+
+/* ===== PAGE NUMBER ===== */
+.page-number {
+    position: absolute;
+    bottom: 5mm; left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Baloo 2', 'Quicksand', 'Trebuchet MS', sans-serif;
+    font-size: 0.65rem; font-weight: 700;
+    color: var(--naba-text-light);
+    z-index: 5;
+}
+
+/* ===== PRINT (A4 Offset — Heidelberg SM 74) ===== */
+@media print {
+    @page { size: 216mm 303mm; margin: 0; }
+    body { background: white !important; margin: 0; padding: 0; }
+    .no-print { display: none !important; }
+    .book-container { padding: 0; gap: 0; }
+
+    .page {
+        margin: 0;
+        box-shadow: none !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        page-break-after: always;
+        break-after: page;
+        page-break-inside: avoid;
+    }
+    .page:last-child { page-break-after: avoid; }
+
+    /* Kill all animations & transitions */
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    /* Flatten shadows for offset */
+    .story-illustration {
+        filter: none !important;
+    }
+    .story-illustration img {
+        filter: none !important;
+    }
+
+    /* Sparkles hidden */
+    .sparkle-star { display: none !important; }
+
+    /* Gold dust pattern hidden in print (saves ink) */
+    .page::before { display: none !important; }
+}

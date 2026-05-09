@@ -1,0 +1,816 @@
+const juzAmmaData = {
+  "78": {
+    "tafsir_qna": "An-Naba' artinya 'Berita Besar'. Surat ini diturunkan di Mekah saat orang-orang kafir Quraisy sedang ramai memperdebatkan berita tentang Hari Kiamat. Mereka saling bertanya dengan nada mengejek, 'Benarkah kita akan dihidupkan lagi setelah mati?'\n\nAllah menjawab keraguan mereka dengan menunjukkan bukti-bukti kekuasaan-Nya yang luar biasa di alam semesta. Allah menjadikan bumi seperti hamparan karpet yang nyaman, menciptakan gunung-gunung sebagai pasak agar bumi tidak berguncang, dan menciptakan siang untuk bekerja serta malam untuk beristirahat.\n\nSurat ini juga menceritakan betapa dahsyatnya Hari Kiamat nanti. Langit akan terbelah, gunung-gunung akan hancur menjadi debu, dan sangkakala akan ditiup. Orang-orang yang berbuat jahat akan mendapat balasan di neraka Jahannam, sedangkan orang-orang yang beriman dan beramal sholeh akan mendapatkan hadiah berupa surga (Jannah) yang indah, penuh dengan kebun-kebun anggur dan sungai yang mengalir.",
+    "pesan_penting": "Pertama, kita harus selalu ingat bahwa Hari Pembalasan itu pasti datang, jadi mari perbanyak amal baik! Kedua, lihatlah alam semesta di sekeliling kita—gunung yang kokoh, matahari yang bersinar, dan hujan yang menyegarkan—semua itu adalah bukti bahwa Allah Maha Kuasa atas segala sesuatu. Jika Allah bisa menciptakan alam semesta yang begitu besar, tentu sangat mudah bagi Allah untuk menghidupkan manusia kembali di Hari Kiamat! 🌟",
+    "asbabun_nuzul": "Dahulu di kota Mekah, ketika Rasulullah Muhammad SAW mulai berdakwah tentang Hari Kebangkitan (Hari Kiamat), para tokoh kafir Quraisy merasa aneh dan tidak percaya. Mereka sering berkumpul membentuk kelompok-kelompok kecil untuk berdebat dan mengejek ajaran Rasulullah. 'Mana mungkin tulang-belulang yang sudah hancur bisa hidup lagi?' kata mereka. Karena perdebatan dan ejekan inilah, Allah langsung menurunkan Surat An-Naba' untuk memberikan peringatan keras dan menjawab keraguan mereka dengan tegas! ⚡",
+    "tajwid": [
+      {
+        "hukum": "Ghunnah Musyaddadah",
+        "contoh": "عَمَّ ('Amma)",
+        "penjelasan": "Mim bertasydid didengungkan 2 harakat."
+      },
+      {
+        "hukum": "Idgham Bighunnah",
+        "contoh": "سِرَاجًا وَهَّاجًا (Sirajaw-wahhaja)",
+        "penjelasan": "Tanwin bertemu Wawu, masuk dengan dengung."
+      },
+      {
+        "hukum": "Qalqalah Sughra",
+        "contoh": "نَجْعَلِ (Naj'ali)",
+        "penjelasan": "Jim sukun di tengah kata memantul tipis."
+      }
+    ]
+  },
+  "79": {
+    "tafsir_qna": "An-Nazi'at artinya Malaikat-malaikat yang mencabut. Menceritakan tugas malaikat dan kisah Nabi Musa yang menghadapi Firaun.",
+    "pesan_penting": "Jangan sombong seperti Firaun. Orang sombong akan celaka, sedangkan orang yang takut kepada Allah akan masuk surga! 🌴",
+    "asbabun_nuzul": "Kisah tentang kehebatan malaikat dan kehancuran Firaun diturunkan untuk menghibur Nabi SAW dan menakut-nakuti orang kafir yang sombong. 🕊️",
+    "tajwid": [
+      {
+        "hukum": "Mad Thobi'i",
+        "contoh": "وَالنَّازِعَاتِ (Wan-nazi'ati)",
+        "penjelasan": "Alif setelah fathah panjang 2 harakat."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "يَنْظُرُ (Yanzhuru)",
+        "penjelasan": "Nun sukun bertemu Zha, samar mendengung."
+      },
+      {
+        "hukum": "Idzhar Halqi",
+        "contoh": "عَنْهَا ('Anha)",
+        "penjelasan": "Nun sukun bertemu Ha, jelas tanpa dengung."
+      }
+    ]
+  },
+  "80": {
+    "tafsir_qna": "'Abasa artinya Bermuka Masam. Menceritakan teguran Allah karena mengabaikan orang buta yang ingin belajar agama.",
+    "pesan_penting": "Semua orang berhak belajar agama. Jangan membedakan orang dari kekayaannya! 🤲",
+    "asbabun_nuzul": "Nabi SAW sedang sibuk berdakwah kepada pembesar Quraisy. Lalu datang Abdullah bin Ummi Maktum (seorang buta) minta diajari agama. Nabi bermuka masam karena terganggu. Allah pun menegur Nabi dengan lembut melalui surat ini. ✨",
+    "tajwid": [
+      {
+        "hukum": "Qalqalah Sughra",
+        "contoh": "يَدْرِيْكَ (Yad-rika)",
+        "penjelasan": "Dal sukun di tengah memantul tipis."
+      },
+      {
+        "hukum": "Idgham Bilaghunnah",
+        "contoh": "مَتَاعًا لَكُمْ (Mata'al-lakum)",
+        "penjelasan": "Tanwin bertemu Lam, masuk tanpa dengung."
+      },
+      {
+        "hukum": "Iqlab",
+        "contoh": "كِرَامٍ بَرَرَةٍ (Kiromim bararah)",
+        "penjelasan": "Tanwin bertemu Ba, berubah jadi Mim dengung."
+      }
+    ]
+  },
+  "81": {
+    "tafsir_qna": "At-Takwir artinya Menggulung. Bayangkan hari ketika matahari digulung, bintang berjatuhan, dan gunung dihancurkan!",
+    "pesan_penting": "Dunia ini hanya sementara. Persiapkan amal baik untuk hari ketika semua rahasia dibuka! 📜",
+    "asbabun_nuzul": "Turun untuk menggambarkan kengerian Hari Kiamat yang luar biasa, agar manusia sadar dan bertaubat sebelum terlambat. ☀️",
+    "tajwid": [
+      {
+        "hukum": "Idgham Bighunnah",
+        "contoh": "نَفْسٌ مَا (Nafsum-ma)",
+        "penjelasan": "Tanwin bertemu Mim, masuk dengan dengung."
+      },
+      {
+        "hukum": "Idzhar Qamariyah",
+        "contoh": "الْجِبَالُ (Al-Jibalu)",
+        "penjelasan": "Alif Lam bertemu Jim, Lam dibaca jelas."
+      },
+      {
+        "hukum": "Mad Wajib Muttashil",
+        "contoh": "شَاءَ (Syaaa'a)",
+        "penjelasan": "Mad bertemu hamzah dalam 1 kata, panjang 4-5 harakat."
+      }
+    ]
+  },
+  "82": {
+    "tafsir_qna": "Al-Infitar artinya Terbelah. Menceritakan tentang langit yang terbelah dan malaikat pencatat amal manusia.",
+    "pesan_penting": "Ingat! Raqib dan Atid selalu mencatat kebaikan dan keburukanmu. Ayo berbanyak amal baik! ✍️",
+    "asbabun_nuzul": "Manusia sering tertipu oleh kemurahan Allah, sehingga berbuat dosa. Surat ini mengingatkan mereka bahwa setiap perbuatan pasti dicatat dan dipertanggungjawabkan. 🌌",
+    "tajwid": [
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "إِنْفَطَرَتْ (Infatharat)",
+        "penjelasan": "Nun sukun bertemu Fa, samar mendengung."
+      },
+      {
+        "hukum": "Idgham Syamsiyah",
+        "contoh": "السَّمَاءُ (As-Samaa'u)",
+        "penjelasan": "Alif Lam bertemu Sin, Lam lebur ke Sin."
+      },
+      {
+        "hukum": "Mad 'Aridh Lissukun",
+        "contoh": "تَعْلَمُوْنَ (Ta'lamun)",
+        "penjelasan": "Mad di akhir ayat saat waqaf, panjang 2-6 harakat."
+      }
+    ]
+  },
+  "83": {
+    "tafsir_qna": "Al-Mutaffifin artinya Orang-orang Curang. Ancaman Allah bagi mereka yang curang dalam menimbang dan menakar barang dagangan.",
+    "pesan_penting": "Kejujuran adalah kunci kesuksesan! Jangan curang walau sedikit, karena Allah Maha Melihat. ⚖️",
+    "asbabun_nuzul": "Di Madinah, banyak pedagang curang yang mengurangi timbangan. Mereka ingin dibayar penuh tapi memberi barang kurang. Allah langsung menegur perilaku ini! 🛑",
+    "tajwid": [
+      {
+        "hukum": "Mad 'Aridh Lissukun",
+        "contoh": "لِلْمُطَفِّفِيْنَ (Lil-muthoffifin)",
+        "penjelasan": "Mad di akhir ayat saat waqaf, panjang 2-6 harakat."
+      },
+      {
+        "hukum": "Ikhfa Syafawi",
+        "contoh": "كُنْتُمْ بِهِ (Kuntum bihi)",
+        "penjelasan": "Mim sukun bertemu Ba, samar di bibir."
+      },
+      {
+        "hukum": "Ghunnah",
+        "contoh": "إِنَّ (Inna)",
+        "penjelasan": "Nun bertasydid didengungkan 2 harakat."
+      }
+    ]
+  },
+  "84": {
+    "tafsir_qna": "Al-Inshiqaq artinya Terbelah. Gambaran ketika langit terbelah dan bumi meratakan isinya pada Hari Kiamat.",
+    "pesan_penting": "Buku catatan amal kita akan dibagikan. Semoga kita menerimanya dari tangan kanan dan bersukacita! 📖",
+    "asbabun_nuzul": "Turun untuk mengingatkan manusia bahwa dunia ini akan hancur lebur dan semua manusia akan kembali kepada Tuhannya. 🌍",
+    "tajwid": [
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "اِنْشَقَّتْ (Insyaqqat)",
+        "penjelasan": "Nun sukun bertemu Syin, samar mendengung."
+      },
+      {
+        "hukum": "Idgham Bilaghunnah",
+        "contoh": "أَنْ لَنْ (Al-lan)",
+        "penjelasan": "Nun sukun bertemu Lam, masuk tanpa dengung."
+      },
+      {
+        "hukum": "Mad Jaiz Munfashil",
+        "contoh": "إِلَى أَهْلِهِ (Ilaaa ahlihi)",
+        "penjelasan": "Mad bertemu hamzah di kata berbeda, 4-5 harakat."
+      }
+    ]
+  },
+  "85": {
+    "tafsir_qna": "Al-Buruj artinya Gugusan Bintang. Menceritakan kisah Ashabul Ukhdud (pemuda beriman yang dibakar) dan janji pertolongan Allah.",
+    "pesan_penting": "Tetap teguh dalam beriman walau banyak ujian. Allah akan melindungi orang-orang yang sabar! 🛡️",
+    "asbabun_nuzul": "Untuk menghibur umat Islam di Mekah yang sedang disiksa agar mereka tetap sabar, seperti sabarnya pemuda Ashabul Ukhdud yang mempertahankan imannya. 🌟",
+    "tajwid": [
+      {
+        "hukum": "Qalqalah Kubra",
+        "contoh": "الْبُرُوْجِ (Al-Buruj)",
+        "penjelasan": "Jim di akhir ayat memantul kuat saat waqaf."
+      },
+      {
+        "hukum": "Idzhar Syafawi",
+        "contoh": "هُمْ عَلَيْهَا (Hum 'alaiha)",
+        "penjelasan": "Mim sukun bertemu 'Ain, jelas tanpa dengung."
+      },
+      {
+        "hukum": "Ghunnah",
+        "contoh": "إِنَّ (Inna)",
+        "penjelasan": "Nun bertasydid didengungkan 2 harakat."
+      }
+    ]
+  },
+  "86": {
+    "tafsir_qna": "At-Tariq artinya Bintang Malam. Mengingatkan bahwa setiap manusia diawasi malaikat pelindung dan pencatat amal.",
+    "pesan_penting": "Allah meneliti segala rahasia hati manusia. Jadilah orang yang ikhlas dalam beramal! 🌠",
+    "asbabun_nuzul": "Suatu malam, Abu Thalib dikejutkan oleh bintang jatuh yang sangat terang. Ia bertanya kepada Nabi SAW, lalu turunlah surat ini menjelaskan bahwa bintang itu adalah ciptaan Allah. 💫",
+    "tajwid": [
+      {
+        "hukum": "Qalqalah Kubra",
+        "contoh": "الثَّاقِبُ (Ats-Tsaqib)",
+        "penjelasan": "Ba di akhir ayat memantul kuat saat waqaf."
+      },
+      {
+        "hukum": "Idgham Bilaghunnah",
+        "contoh": "نَفْسٍ لَمَّا (Nafsil-lamma)",
+        "penjelasan": "Tanwin bertemu Lam, melebur tanpa dengung."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "مِنْ صُلْبِ (Min shulbi)",
+        "penjelasan": "Nun sukun bertemu Shad, samar mendengung."
+      }
+    ]
+  },
+  "87": {
+    "tafsir_qna": "Al-A'la artinya Yang Maha Tinggi. Allah mengatur segala sesuatu dengan sangat sempurna.",
+    "pesan_penting": "Allah selalu mudahkan jalan kebaikan. Ingat Allah dan jangan pernah lupakan kebaikan-Nya! 🌿",
+    "asbabun_nuzul": "Nabi SAW sangat ingin segera menghafal wahyu karena takut lupa. Surat ini turun menjamin bahwa Allah yang akan membimbing bacaan Nabi agar tidak lupa. 📖",
+    "tajwid": [
+      {
+        "hukum": "Mad Thobi'i",
+        "contoh": "الْأَعْلَى (Al-A'la)",
+        "penjelasan": "Alif layyinah di akhir panjang 2 harakat."
+      },
+      {
+        "hukum": "Qalqalah Sughra",
+        "contoh": "سُبْحَانَ (Sub-hana)",
+        "penjelasan": "Ba sukun di tengah memantul tipis."
+      },
+      {
+        "hukum": "Idzhar Halqi",
+        "contoh": "غُثَاءً أَحْوَى (Ghutsaa-an ahwa)",
+        "penjelasan": "Tanwin bertemu Hamzah, jelas tanpa dengung."
+      }
+    ]
+  },
+  "88": {
+    "tafsir_qna": "Al-Ghashiyah artinya Hari Pembalasan. Kisah tentang wajah-wajah ketakutan dan wajah-wajah yang berseri bahagia di hari kiamat.",
+    "pesan_penting": "Syukuri nikmat sehat dan waktu luang untuk beramal baik agar wajah kita bercahaya di surga kelak! 😊",
+    "asbabun_nuzul": "Allah memerintahkan Nabi SAW untuk tidak bersedih jika ada yang menolak dakwah, karena tugas Nabi hanya menyampaikan peringatan, bukan memaksa. 🐪",
+    "tajwid": [
+      {
+        "hukum": "Idgham Bighunnah",
+        "contoh": "وُجُوْهٌ يَّوْمَئِذٍ (Wujuhuy-yauma'idzin)",
+        "penjelasan": "Tanwin bertemu Ya, masuk berdengung."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "مِنْ جُوْعٍ (Min juu')",
+        "penjelasan": "Nun sukun bertemu Jim, samar mendengung."
+      },
+      {
+        "hukum": "Idzhar Syafawi",
+        "contoh": "إِيَابَهُمْ ثُمَّ (Iyaabahum tsumma)",
+        "penjelasan": "Mim sukun bertemu Tsa, jelas di bibir."
+      }
+    ]
+  },
+  "89": {
+    "tafsir_qna": "Al-Fajr artinya Waktu Fajar. Menceritakan hukuman Allah pada kaum Aad, Tsamud, dan Firaun yang sombong.",
+    "pesan_penting": "Kaya bukan berarti mulia, miskin bukan berarti hina. Itu semua hanya ujian dari Allah! 🌅",
+    "asbabun_nuzul": "Turun untuk mengingatkan manusia agar tidak sombong seperti umat-umat terdahulu yang dihancurkan Allah, serta mengajak peduli anak yatim dan fakir miskin. 🌄",
+    "tajwid": [
+      {
+        "hukum": "Qalqalah Sughra",
+        "contoh": "وَالْفَجْرِ (Wal-Fajr)",
+        "penjelasan": "Jim sukun di tengah memantul tipis."
+      },
+      {
+        "hukum": "Mad Jaiz Munfashil",
+        "contoh": "كَلَّا إِذَا (Kallaaa idzaa)",
+        "penjelasan": "Mad bertemu hamzah di kata berbeda, 4-5 harakat."
+      },
+      {
+        "hukum": "Ikhfa Syafawi",
+        "contoh": "رَبُّهُمْ بِعَذَابٍ (Rabbuhum bi'adzab)",
+        "penjelasan": "Mim sukun bertemu Ba, samar mendengung."
+      }
+    ]
+  },
+  "90": {
+    "tafsir_qna": "Al-Balad artinya Negeri. Menceritakan jalan mendaki (kebajikan) yang berat namun mulia, seperti memberi makan orang lapar.",
+    "pesan_penting": "Berbagi dan peduli pada sesama adalah jalan mendaki menuju rida Allah. Jangan lelah berbuat baik! 🏙️",
+    "asbabun_nuzul": "Allah memuliakan kota Mekah dan menjelaskan bahwa manusia diciptakan dalam keadaan bersusah payah untuk berjuang memilih kebaikan. 🕌",
+    "tajwid": [
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "إِنْسَانَ (Insana)",
+        "penjelasan": "Nun sukun bertemu Sin, samar mendengung."
+      },
+      {
+        "hukum": "Idgham Bighunnah",
+        "contoh": "وَّالِدٍ وَّمَا (Wa lidiw-wamaa)",
+        "penjelasan": "Tanwin bertemu Wawu, masuk berdengung."
+      },
+      {
+        "hukum": "Qalqalah Kubra",
+        "contoh": "الْبَلَدِ (Al-Balad)",
+        "penjelasan": "Dal di akhir ayat memantul kuat saat waqaf."
+      }
+    ]
+  },
+  "91": {
+    "tafsir_qna": "Ash-Shams artinya Matahari. Sumpah Allah dengan benda-benda langit bahwa jiwa yang suci akan beruntung.",
+    "pesan_penting": "Allah memberi akal dan hati, pilihlah jalan kebaikan untuk mensucikan jiwamu dari sifat buruk! 🌞",
+    "asbabun_nuzul": "Allah menceritakan kehancuran kaum Tsamud (kaum Nabi Shalih) karena membunuh unta mukjizat dan mengotori jiwa mereka dengan dosa. 🐪",
+    "tajwid": [
+      {
+        "hukum": "Ghunnah Musyaddadah",
+        "contoh": "إِنَّ (Inna)",
+        "penjelasan": "Nun bertasydid didengungkan 2 harakat."
+      },
+      {
+        "hukum": "Idgham Syamsiyah",
+        "contoh": "الشَّمْسِ (Asy-Syamsi)",
+        "penjelasan": "Alif Lam bertemu Syin, Lam dilebur."
+      },
+      {
+        "hukum": "Mad Thobi'i",
+        "contoh": "ضُحَاهَا (Dhuhaahaa)",
+        "penjelasan": "Fathah bertemu Alif, panjang 2 harakat."
+      }
+    ]
+  },
+  "92": {
+    "tafsir_qna": "Al-Lail artinya Malam. Perbedaan orang yang suka memberi (dermawan) dengan orang yang pelit.",
+    "pesan_penting": "Banyak berbagi akan mempermudah urusanmu. Sifat bakhil hanya akan menyusahkan diri sendiri! 🌙",
+    "asbabun_nuzul": "Turun untuk memuji sahabat Abu Bakar yang rela membeli dan membebaskan Bilal bin Rabah dari siksaan majikan kafirnya. Kedermawanan membawa kemudahan! 🪙",
+    "tajwid": [
+      {
+        "hukum": "Idgham Bighunnah",
+        "contoh": "وَمَنْ يَّبْخَلْ (Wamay-yabkhal)",
+        "penjelasan": "Nun sukun bertemu Ya, masuk berdengung."
+      },
+      {
+        "hukum": "Idzhar Halqi",
+        "contoh": "مَنْ أَعْطَى (Man a'tha)",
+        "penjelasan": "Nun sukun bertemu Hamzah, jelas tanpa dengung."
+      },
+      {
+        "hukum": "Qalqalah Sughra",
+        "contoh": "يَبْخَلْ (Yabkhal)",
+        "penjelasan": "Ba sukun di tengah memantul tipis."
+      }
+    ]
+  },
+  "93": {
+    "tafsir_qna": "Ad-Duha artinya Waktu Duha (Pagi). Wahyu ini menghibur Nabi SAW yang sedang bersedih karena lama tidak turun wahyu.",
+    "pesan_penting": "Allah tidak pernah membenci atau meninggalkanmu. Masa depan pasti lebih baik! ☀️",
+    "asbabun_nuzul": "Wahyu sempat terputus selama beberapa waktu. Orang kafir mengejek 'Tuhan Muhammad telah meninggalkannya'. Turunlah Ad-Duha untuk menghibur Nabi SAW. 🕊️",
+    "tajwid": [
+      {
+        "hukum": "Mad Thobi'i",
+        "contoh": "الضُّحَى (Ad-Dhuha)",
+        "penjelasan": "Alif layyinah di akhir panjang 2 harakat."
+      },
+      {
+        "hukum": "Qalqalah Sughra",
+        "contoh": "لَمْ يَجِدْكَ (Lam yajidka)",
+        "penjelasan": "Dal sukun di tengah memantul tipis."
+      },
+      {
+        "hukum": "Ghunnah",
+        "contoh": "فَأَمَّا (Fa'ammaa)",
+        "penjelasan": "Mim bertasydid didengungkan 2 harakat."
+      }
+    ]
+  },
+  "94": {
+    "tafsir_qna": "Ash-Sharh artinya Melapangkan. Janji Allah bahwa setelah kesulitan pasti akan selalu ada kemudahan.",
+    "pesan_penting": "Jangan menyerah saat menghadapi masalah! Setiap 1 masalah pasti diiringi 2 jalan keluar dari Allah. ☁️",
+    "asbabun_nuzul": "Melanjutkan Ad-Duha, surat ini memotivasi Nabi SAW agar tetap semangat berdakwah karena beban seberat apa pun akan diringankan Allah. ⛅",
+    "tajwid": [
+      {
+        "hukum": "Idzhar Syafawi",
+        "contoh": "أَلَمْ نَشْرَحْ (Alam Nasyrah)",
+        "penjelasan": "Mim sukun bertemu Nun, jelas di bibir."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "عَنْكَ (Anka)",
+        "penjelasan": "Nun sukun bertemu Kaf, samar mendengung."
+      },
+      {
+        "hukum": "Qalqalah Sughra",
+        "contoh": "أَنْقَضَ (Anqadha)",
+        "penjelasan": "Qaf sukun di tengah memantul tipis."
+      }
+    ]
+  },
+  "95": {
+    "tafsir_qna": "At-Tin artinya Buah Tin. Allah bersumpah dengan buah Tin, Zaitun, Gunung Sinai, dan Kota Mekah.",
+    "pesan_penting": "Manusia diciptakan dalam bentuk paling sempurna. Pertahankan kemuliaan itu dengan iman dan akhlak baik! 🍇",
+    "asbabun_nuzul": "Penjelasan bahwa manusia yang tidak beriman dan beramal sholeh akan dikembalikan ke derajat yang paling hina, meski fisiknya diciptakan sangat sempurna. 🌿",
+    "tajwid": [
+      {
+        "hukum": "Idgham Syamsiyah",
+        "contoh": "وَالتِّيْنِ (Wat-Tini)",
+        "penjelasan": "Alif Lam bertemu Ta, Lam dilebur ke Ta."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "إِنْسَانَ (Insana)",
+        "penjelasan": "Nun sukun bertemu Sin, samar mendengung."
+      },
+      {
+        "hukum": "Qalqalah Sughra",
+        "contoh": "لَقَدْ (Laqad)",
+        "penjelasan": "Dal sukun di tengah memantul tipis."
+      }
+    ]
+  },
+  "96": {
+    "tafsir_qna": "Al-'Alaq artinya Segumpal Darah. Ayat 1-5 adalah wahyu pertama yang diturunkan kepada Nabi Muhammad SAW.",
+    "pesan_penting": "Membaca dan menuntut ilmu adalah kunci kemuliaan yang diperintahkan Allah sejak awal! 📖",
+    "asbabun_nuzul": "Nabi SAW sedang bertahanus (menyendiri) di Gua Hira. Malaikat Jibril memeluk beliau dan memerintahkan 'Bacalah!' (Iqra'). Inilah detik pertama turunnya Al-Quran! ⛰️",
+    "tajwid": [
+      {
+        "hukum": "Qalqalah Kubra",
+        "contoh": "عَلَقٍ ('Alaq)",
+        "penjelasan": "Qaf di akhir ayat memantul sangat kuat."
+      },
+      {
+        "hukum": "Idzhar Halqi",
+        "contoh": "مِنْ عَلَقٍ (Min 'alaq)",
+        "penjelasan": "Nun sukun bertemu 'Ain, jelas tanpa dengung."
+      },
+      {
+        "hukum": "Qalqalah Sughra",
+        "contoh": "اِقْرَأْ (Iqra')",
+        "penjelasan": "Qaf sukun di tengah memantul tipis."
+      }
+    ]
+  },
+  "97": {
+    "tafsir_qna": "Al-Qadr artinya Kemuliaan. Menceritakan malam Lailatul Qadr di bulan Ramadan yang lebih baik dari 1000 bulan.",
+    "pesan_penting": "Bersemangatlah beribadah di 10 malam terakhir Ramadan agar mendapat pahala malam Kemuliaan! 🌙",
+    "asbabun_nuzul": "Nabi SAW menceritakan kisah pemuda Bani Israil yang beribadah selama 1000 bulan (83 tahun). Para sahabat sedih karena umur mereka pendek. Allah menghibur dengan malam Lailatul Qadr! ✨",
+    "tajwid": [
+      {
+        "hukum": "Qalqalah Sughra",
+        "contoh": "الْقَدْرِ (Al-Qadr)",
+        "penjelasan": "Dal sukun di tengah memantul tipis."
+      },
+      {
+        "hukum": "Idgham Bighunnah",
+        "contoh": "خَيْرٌ مِنْ (Khairum-min)",
+        "penjelasan": "Tanwin bertemu Mim, masuk berdengung."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "مِنْ كُلِّ (Min kulli)",
+        "penjelasan": "Nun sukun bertemu Kaf, samar mendengung."
+      }
+    ]
+  },
+  "98": {
+    "tafsir_qna": "Al-Bayyinah artinya Bukti Nyata. Kedatangan Rasulullah membawa Al-Quran yang suci dan lurus.",
+    "pesan_penting": "Sebaik-baiknya makhluk adalah mereka yang beriman dan berbuat baik. Jangan ragu dalam kebenaran! 📜",
+    "asbabun_nuzul": "Menegaskan bahwa orang Yahudi dan Nasrani yang tahu sifat Nabi dari kitab mereka, namun tidak mau beriman saat bukti nyata datang, adalah perbuatan salah. 🕌",
+    "tajwid": [
+      {
+        "hukum": "Idgham Bighunnah",
+        "contoh": "رَسُوْلٌ مِّنَ (Rasulum-mina)",
+        "penjelasan": "Tanwin bertemu Mim, masuk berdengung."
+      },
+      {
+        "hukum": "Idzhar Halqi",
+        "contoh": "مِنْ أَهْلِ (Min ahli)",
+        "penjelasan": "Nun sukun bertemu Hamzah, jelas tanpa dengung."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "عِنْدَ ('Inda)",
+        "penjelasan": "Nun sukun bertemu Dal, samar mendengung."
+      }
+    ]
+  },
+  "99": {
+    "tafsir_qna": "Az-Zalzalah artinya Kegoncangan. Saat Hari Kiamat, bumi akan digoncangkan hebat dan mengeluarkan isinya.",
+    "pesan_penting": "Sekecil apapun kebaikan dan kejahatan seukuran debu, semua akan diperlihatkan oleh Allah. Jujurlah selalu! 🌍",
+    "asbabun_nuzul": "Ada sebagian sahabat yang merasa bahwa bersedekah sedikit tidak ada pahalanya, dan berbuat dosa kecil tidak apa-apa. Surat ini turun membantah hal itu! ⚖️",
+    "tajwid": [
+      {
+        "hukum": "Idgham Bighunnah",
+        "contoh": "مَنْ يَّعْمَلْ (May-ya'mal)",
+        "penjelasan": "Nun sukun bertemu Ya, masuk berdengung."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "يَوْمَئِذٍ تُحَدِّثُ (Yauma'idzin tuhadditsu)",
+        "penjelasan": "Tanwin bertemu Ta, samar mendengung."
+      },
+      {
+        "hukum": "Idzhar Halqi",
+        "contoh": "ذَرَّةٍ خَيْرًا (Dzarratin khairan)",
+        "penjelasan": "Tanwin bertemu Kha, jelas tanpa dengung."
+      }
+    ]
+  },
+  "100": {
+    "tafsir_qna": "Al-'Adiyat artinya Kuda Perang Berlari Kencang. Kuda sangat setia pada tuannya, mengapa manusia tidak setia pada Tuhannya?",
+    "pesan_penting": "Selalu bersyukur kepada Allah atas segala nikmat. Jangan bakhil dan melupakan Sang Pencipta! 🐎",
+    "asbabun_nuzul": "Nabi SAW mengutus pasukan berkuda, namun 1 bulan tidak ada kabar. Orang munafik menyebarkan kabar buruk. Turunlah surat ini mengabarkan keselamatan pasukan tersebut! 🏇",
+    "tajwid": [
+      {
+        "hukum": "Qalqalah Sughra",
+        "contoh": "ضَبْحًا (Dhab-han)",
+        "penjelasan": "Ba sukun di tengah memantul tipis."
+      },
+      {
+        "hukum": "Ghunnah",
+        "contoh": "إِنَّ (Inna)",
+        "penjelasan": "Nun bertasydid didengungkan 2 harakat."
+      },
+      {
+        "hukum": "Ikhfa Syafawi",
+        "contoh": "رَبَّهُمْ بِهِمْ (Rabbahum bihim)",
+        "penjelasan": "Mim sukun bertemu Ba, samar di bibir."
+      }
+    ]
+  },
+  "101": {
+    "tafsir_qna": "Al-Qari'ah artinya Hari Kiamat yang Menggetarkan. Timbangan kebaikan akan menentukan kebahagiaan.",
+    "pesan_penting": "Isi hari-harimu dengan amal baik (bantu teman, senyum, sholat) agar timbangan kananmu berat! ⚖️",
+    "asbabun_nuzul": "Menggambarkan dahsyatnya suara sangkakala hari kiamat yang akan menggetarkan hati manusia, membuat manusia berterbangan seperti laron. 🦋",
+    "tajwid": [
+      {
+        "hukum": "Idgham Bilaghunnah",
+        "contoh": "عِيْشَةٍ رَّاضِيَةٍ ('Isyatar-radhiyah)",
+        "penjelasan": "Tanwin bertemu Ra, masuk tanpa dengung."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "مَنْ ثَقُلَتْ (Man tsaqulat)",
+        "penjelasan": "Nun sukun bertemu Tsa, samar mendengung."
+      },
+      {
+        "hukum": "Idzhar Halqi",
+        "contoh": "نَارٌ حَامِيَةٌ (Naarun Hamiyah)",
+        "penjelasan": "Tanwin bertemu Ha, jelas tanpa dengung."
+      }
+    ]
+  },
+  "102": {
+    "tafsir_qna": "At-Takathur artinya Bermegah-megahan. Sifat manusia yang sibuk mengumpulkan harta hingga lupa tujuan akhirat.",
+    "pesan_penting": "Boleh punya banyak mainan/harta, tapi jangan lupa berbagi! Harta tidak dibawa mati, hanya amal sholeh yang dibawa. 💰",
+    "asbabun_nuzul": "Turun karena melihat dua kabilah Arab yang saling membanggakan harta dan jumlah keturunannya hingga pergi ke kuburan untuk menghitung orang yang mati, agar merasa lebih hebat. Allah menegur keras sikap ini! 🪦",
+    "tajwid": [
+      {
+        "hukum": "Ghunnah Musyaddadah",
+        "contoh": "ثُمَّ (Tsumma)",
+        "penjelasan": "Mim bertasydid didengungkan 2 harakat."
+      },
+      {
+        "hukum": "Idzhar Halqi",
+        "contoh": "عَنْ (An)",
+        "penjelasan": "Nun sukun bertemu 'Ain, jelas tanpa dengung."
+      },
+      {
+        "hukum": "Mad Thobi'i",
+        "contoh": "تَكَاثُرُ (Takatsuru)",
+        "penjelasan": "Fathah bertemu Alif, panjang 2 harakat."
+      }
+    ]
+  },
+  "103": {
+    "tafsir_qna": "Al-'Asr artinya Masa/Waktu. Demi waktu sore, semua manusia sebenarnya merugi kecuali yang melakukan 3 hal.",
+    "pesan_penting": "Hargai waktumu! Gunakan untuk beriman, beramal sholeh, dan saling menasihati teman dalam kebaikan. ⏳",
+    "asbabun_nuzul": "Orang Jahiliyah sering menghabiskan waktu sore dengan bersantai, bergosip, dan perbuatan sia-sia, lalu menyalahkan 'waktu'. Allah bersumpah Demi Waktu bahwa yang salah adalah perbuatan manusia sendiri! 🕰️",
+    "tajwid": [
+      {
+        "hukum": "Mad Thobi'i",
+        "contoh": "الَّذِيْنَ (Alladzina)",
+        "penjelasan": "Kasrah diikuti Ya sukun, panjang 2 harakat."
+      },
+      {
+        "hukum": "Idzhar Qamariyah",
+        "contoh": "وَالْعَصْرِ (Wal-'Ashr)",
+        "penjelasan": "Alif Lam bertemu 'Ain, Lam jelas."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "الْإِنْسَانَ (Al-Insana)",
+        "penjelasan": "Nun sukun bertemu Sin, samar mendengung."
+      }
+    ]
+  },
+  "104": {
+    "tafsir_qna": "Al-Humazah artinya Pengumpat/Pengejek. Celakalah orang yang suka mengejek orang lain dari depan dan belakang.",
+    "pesan_penting": "Haram membully atau mengejek teman! Jaga lidahmu, karena ucapan buruk bisa mendatangkan siksa Allah. 🗣️",
+    "asbabun_nuzul": "Turun untuk tokoh musyrik Akhnas bin Syariq (atau Ubay bin Khalaf) yang sangat suka mengejek Nabi SAW dan kaum Muslimin secara diam-diam dan terang-terangan karena sombong dengan hartanya. 🚫",
+    "tajwid": [
+      {
+        "hukum": "Iqlab",
+        "contoh": "لَيُنْبَذَنَّ (Layumbadzanna)",
+        "penjelasan": "Nun sukun bertemu Ba, berubah jadi Mim dengung."
+      },
+      {
+        "hukum": "Idgham Bighunnah",
+        "contoh": "مَالًا وَعَدَّدَهُ (Maalaw-wa'addadah)",
+        "penjelasan": "Tanwin bertemu Wawu, masuk berdengung."
+      },
+      {
+        "hukum": "Ghunnah",
+        "contoh": "لَيُنْبَذَنَّ (Layumbadzanna)",
+        "penjelasan": "Nun bertasydid di akhir didengungkan 2 harakat."
+      }
+    ]
+  },
+  "105": {
+    "tafsir_qna": "Al-Fil artinya Gajah. Kisah pasukan gajah Raja Abrahah yang ingin menghancurkan Ka'bah.",
+    "pesan_penting": "Tidak ada kekuatan yang lebih besar dari Allah. Allah akan selalu melindungi tempat suci-Nya! 🐘",
+    "asbabun_nuzul": "Abrahah cemburu Ka'bah sangat ramai dikunjungi. Ia membawa pasukan gajah raksasa untuk meruntuhkannya. Namun Allah mengirim ribuan burung Ababil menjatuhkan batu panas dari neraka, mengalahkan mereka! 🌋",
+    "tajwid": [
+      {
+        "hukum": "Idzhar Syafawi",
+        "contoh": "أَلَمْ تَرَ (Alam tara)",
+        "penjelasan": "Mim sukun bertemu Ta, jelas tanpa dengung."
+      },
+      {
+        "hukum": "Ikhfa Syafawi",
+        "contoh": "تَرْمِيْهِمْ بِحِجَارَةٍ (Tarmihim bihijarah)",
+        "penjelasan": "Mim sukun bertemu Ba, samar mendengung."
+      },
+      {
+        "hukum": "Idgham Bighunnah",
+        "contoh": "بِحِجَارَةٍ مِنْ (Bihijaratim-min)",
+        "penjelasan": "Tanwin bertemu Mim, masuk berdengung."
+      }
+    ]
+  },
+  "106": {
+    "tafsir_qna": "Quraysh artinya Suku Quraisy. Suku Nabi Muhammad yang diberi keistimewaan dan perlindungan oleh Allah.",
+    "pesan_penting": "Selalu bersyukur atas nikmat keamanan dan makanan dari Allah setiap hari! Beribadahlah kepada Pemilik Ka'bah. 🐪",
+    "asbabun_nuzul": "Mengingatkan suku Quraisy yang aman bepergian dagang di musim dingin dan panas, bahwa semua keamanan itu adalah hadiah dari Allah, maka mereka harus menyembah-Nya, bukan menyembah berhala. 🕋",
+    "tajwid": [
+      {
+        "hukum": "Mad Lin",
+        "contoh": "قُرَيْشٍ (Quraisy)",
+        "penjelasan": "Waqaf pada huruf didahului Ya sukun setelah fathah."
+      },
+      {
+        "hukum": "Idzhar Syafawi",
+        "contoh": "إِيْلَافِهِمْ رِحْلَةَ (Ilafihim rihlah)",
+        "penjelasan": "Mim sukun bertemu Ra, jelas di bibir."
+      },
+      {
+        "hukum": "Idgham Mimi",
+        "contoh": "أَطْعَمَهُمْ مِنْ (Ath'amahum-min)",
+        "penjelasan": "Mim sukun bertemu Mim, lebur mendengung."
+      }
+    ]
+  },
+  "107": {
+    "tafsir_qna": "Al-Ma'un artinya Barang Berguna. Ciri pendusta agama: Menghardik anak yatim, tidak membantu miskin, dan pamer sholat.",
+    "pesan_penting": "Bantu teman meminjamkan barang kecil (seperti pensil/penghapus). Jangan suka pamer (riya') saat sholat! 🤲",
+    "asbabun_nuzul": "Abu Sufyan (atau Abu Jahl) menyembelih unta besar tiap minggu. Saat anak yatim miskin minta sedikit daging, ia malah menghardik dan mengusirnya. Allah melaknat perbuatan jahat ini! 🍲",
+    "tajwid": [
+      {
+        "hukum": "Mad 'Aridh Lissukun",
+        "contoh": "لِلْمُصَلِّيْنَ (Lil-mushollin)",
+        "penjelasan": "Mad di akhir ayat saat waqaf, panjang 2-6 harakat."
+      },
+      {
+        "hukum": "Idzhar Syafawi",
+        "contoh": "هُمْ عَنْ (Hum 'an)",
+        "penjelasan": "Mim sukun bertemu 'Ain, jelas di bibir."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "عَنْ صَلَاتِهِمْ ('An shalatihim)",
+        "penjelasan": "Nun sukun bertemu Shad, samar mendengung."
+      }
+    ]
+  },
+  "108": {
+    "tafsir_qna": "Al-Kawthar artinya Nikmat yang Banyak (atau Telaga Kautsar). Perintah untuk bersyukur lewat Sholat dan Qurban.",
+    "pesan_penting": "Ketika diberi nikmat, bersyukurlah dengan taat sholat dan rajin berbagi (seperti qurban)! 💖",
+    "asbabun_nuzul": "Anak laki-laki Nabi SAW meninggal dunia. Orang kafir Al-Ash bin Wa'il mengejek Nabi terputus keturunannya. Allah menghibur Nabi bahwa Nabi diberi kebaikan berlimpah (Telaga Surga Al-Kautsar)! 🌊",
+    "tajwid": [
+      {
+        "hukum": "Ghunnah Musyaddadah",
+        "contoh": "إِنَّا (Inna)",
+        "penjelasan": "Nun bertasydid didengungkan 2 harakat."
+      },
+      {
+        "hukum": "Idzhar Qamariyah",
+        "contoh": "الْكَوْثَرَ (Al-Kautsar)",
+        "penjelasan": "Alif Lam bertemu Kaf, Lam jelas."
+      },
+      {
+        "hukum": "Qalqalah Sughra",
+        "contoh": "أَبْتَرُ (Ab-tar)",
+        "penjelasan": "Ba sukun di tengah memantul tipis."
+      }
+    ]
+  },
+  "109": {
+    "tafsir_qna": "Al-Kafirun artinya Orang-orang Kafir. Penegasan toleransi beragama: 'Untukmu agamamu, dan untukku agamaku.'",
+    "pesan_penting": "Kita harus berteman baik dengan semua orang, tapi dalam urusan ibadah agama, kita punya jalan masing-masing! 🤝",
+    "asbabun_nuzul": "Pembesar kafir menawarkan kompromi lucu: 'Hai Muhammad, mari kita ganti-gantian menyembah Tuhan! Setahun kami sembah Allah, setahun kau sembah berhala.' Surat ini turun menolak ide konyol tersebut! 🛑",
+    "tajwid": [
+      {
+        "hukum": "Mad Jaiz Munfashil",
+        "contoh": "لَا أَعْبُدُ (Laa a'budu)",
+        "penjelasan": "Mad bertemu hamzah di kata berbeda, 4-5 harakat."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "أَنْتُمْ (Antum)",
+        "penjelasan": "Nun sukun bertemu Ta, samar mendengung."
+      },
+      {
+        "hukum": "Idzhar Syafawi",
+        "contoh": "لَكُمْ دِيْنُكُمْ (Lakum dinukum)",
+        "penjelasan": "Mim sukun bertemu Dal, jelas di bibir."
+      }
+    ]
+  },
+  "110": {
+    "tafsir_qna": "An-Nasr artinya Pertolongan. Janji Allah bahwa pertolongan dan kemenangan Kota Mekah (Fathu Makkah) pasti datang.",
+    "pesan_penting": "Jika kamu sukses dan menang, jangan sombong! Perbanyaklah bertasbih memuji Allah dan mohon ampun. 🏆",
+    "asbabun_nuzul": "Surat ini menjadi tanda akhir dakwah Nabi SAW. Setelah penaklukan Mekah tanpa tumpah darah berkat pertolongan Allah, berbondong-bondong orang memeluk Islam. 🕌",
+    "tajwid": [
+      {
+        "hukum": "Mad Wajib Muttashil",
+        "contoh": "جَاءَ (Jaaa'a)",
+        "penjelasan": "Mad bertemu hamzah dalam 1 kata, panjang 4-5 harakat."
+      },
+      {
+        "hukum": "Mad Iwad",
+        "contoh": "أَفْوَاجًا (Afwaja)",
+        "penjelasan": "Tanwin fathah di akhir ayat saat waqaf, panjang 2 harakat."
+      },
+      {
+        "hukum": "Ghunnah",
+        "contoh": "النَّاسِ (An-Naasi)",
+        "penjelasan": "Nun bertasydid didengungkan 2 harakat."
+      }
+    ]
+  },
+  "111": {
+    "tafsir_qna": "Al-Masad artinya Sabut. Celakanya Abu Lahab dan istrinya yang selalu menyakiti dakwah Nabi SAW.",
+    "pesan_penting": "Harta tidak berguna jika hatinya benci kebaikan. Orang jahat seperti Abu Lahab akan dibalas di neraka. 🔥",
+    "asbabun_nuzul": "Nabi SAW berdakwah di Bukit Shafa memanggil keluarganya. Namun sang paman, Abu Lahab, malah memaki 'Celakalah engkau hai Muhammad!'. Maka Allah membalas dengan 'Celakalah kedua tangan Abu Lahab!' 💥",
+    "tajwid": [
+      {
+        "hukum": "Qalqalah Kubra",
+        "contoh": "وَتَبَّ (Wa tabb)",
+        "penjelasan": "Ba bertasydid di akhir ayat memantul kuat."
+      },
+      {
+        "hukum": "Idgham Bighunnah",
+        "contoh": "لَهَبٍ وَتَبَّ (Lahabiw-watabb)",
+        "penjelasan": "Tanwin bertemu Wawu, masuk berdengung."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "نَارًا ذَاتَ (Naaran dzaata)",
+        "penjelasan": "Tanwin bertemu Dzal, samar mendengung."
+      }
+    ]
+  },
+  "112": {
+    "tafsir_qna": "Al-Ikhlas artinya Memurnikan Keesaan. Surat ini mengajarkan bahwa Allah itu SATU. Tidak ada Tuhan selain Dia.",
+    "pesan_penting": "Allah tidak punya anak, orang tua, atau saudara. Hanya kepada Allah kita meminta tolong! 🤲",
+    "asbabun_nuzul": "Orang-orang musyrik Mekah mendatangi Nabi Muhammad SAW dan bertanya, 'Hai Muhammad, sebutkan silsilah (garis keturunan) Tuhanmu!' Maka Allah menurunkan surat ini menegaskan tidak ada yang setara dengan Allah. ✨",
+    "tajwid": [
+      {
+        "hukum": "Qalqalah Kubra",
+        "contoh": "أَحَدٌ (Ahad)",
+        "penjelasan": "Dal di akhir ayat memantul sangat kuat saat waqaf."
+      },
+      {
+        "hukum": "Idzhar Halqi",
+        "contoh": "كُفُوًا أَحَدٌ (Kufuwan ahad)",
+        "penjelasan": "Tanwin bertemu Hamzah, jelas tanpa dengung."
+      },
+      {
+        "hukum": "Idgham Syamsiyah",
+        "contoh": "الصَّمَدُ (Ash-Shamad)",
+        "penjelasan": "Alif Lam bertemu Shad, Lam dilebur."
+      }
+    ]
+  },
+  "113": {
+    "tafsir_qna": "Al-Falaq artinya Waktu Subuh. Memohon perlindungan kepada Allah dari kejahatan malam, sihir, dan orang dengki.",
+    "pesan_penting": "Orang iri hati bisa berbahaya. Baca Al-Falaq sebagai perisai perlindungan dari segala macam kejahatan. 🛡️",
+    "asbabun_nuzul": "Nabi Muhammad SAW sempat sakit karena disihir oleh seorang Yahudi bernama Lubaid bin A'sham. Kemudian turunlah surat Al-Falaq & An-Nas (Al-Mu'awwidzatain) sebagai doa perlindungan dan obat. 🌙",
+    "tajwid": [
+      {
+        "hukum": "Qalqalah Kubra",
+        "contoh": "الْفَلَقِ (Al-Falaq)",
+        "penjelasan": "Qaf di akhir ayat memantul kuat saat waqaf."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "مِنْ شَرِّ (Min syarri)",
+        "penjelasan": "Nun sukun bertemu Syin, samar mendengung."
+      },
+      {
+        "hukum": "Idzhar Halqi",
+        "contoh": "غَاسِقٍ إِذَا (Ghasiqin idza)",
+        "penjelasan": "Tanwin bertemu Hamzah, jelas tanpa dengung."
+      }
+    ]
+  },
+  "114": {
+    "tafsir_qna": "An-Nas artinya Manusia. Memohon perlindungan kepada Allah (Raja Manusia) dari bisikan jahat iblis dan manusia.",
+    "pesan_penting": "Setan selalu membisikkan niat buruk di hati kita. Baca An-Nas agar hatimu dijaga Allah dan bebas dari niat jahat. 💖",
+    "asbabun_nuzul": "Diturunkan bersamaan dengan Al-Falaq sebagai doa penyembuh dan pelindung mutlak dari godaan makhluk tak kasat mata yang membisikkan niat jahat. 🕊️",
+    "tajwid": [
+      {
+        "hukum": "Ghunnah Musyaddadah",
+        "contoh": "النَّاسِ (An-Nas)",
+        "penjelasan": "Nun bertasydid didengungkan 2 harakat."
+      },
+      {
+        "hukum": "Idgham Syamsiyah",
+        "contoh": "النَّاسِ (An-Nas)",
+        "penjelasan": "Alif Lam bertemu Nun, Lam lebur sepenuhnya."
+      },
+      {
+        "hukum": "Ikhfa Haqiqi",
+        "contoh": "مِنْ شَرِّ (Min syarri)",
+        "penjelasan": "Nun sukun bertemu Syin, samar mendengung."
+      }
+    ]
+  }
+};

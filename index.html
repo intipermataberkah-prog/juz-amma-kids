@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juz Amma — Storybook Edition</title>
+    <meta name="description" content="Juz Amma premium bergaya buku cerita anak. Setiap surah punya karakter unik dan ilustrasi khas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20260509f">
+</head>
+<body>
+    <div class="no-print">
+        <h1>Juz Amma &mdash; Storybook Edition</h1>
+        <p>Setiap surah memiliki karakter dan dunia visual uniknya sendiri.</p>
+        <div>
+            <button id="btnLoadData" class="btn-primary">Muat Surah An-Naba'</button>
+            <button id="btnPrint" class="btn-secondary" disabled>Cetak (A4)</button>
+        </div>
+        <div id="loadingStatus" class="status-msg"></div>
+    </div>
+
+    <div id="juzAmmaContainer" class="book-container"></div>
+
+    <script src="data/juz_amma_content.js?v=20260509f"></script>
+    <script src="app.js?v=20260509f"></script>
+</body>
+</html>

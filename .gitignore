@@ -1,0 +1,13 @@
+# Environment variables
+.env
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Temporary files
+*.tmp
+*.log
+
+# Node (just in case they ever add it)
+node_modules/
